@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { Moon, Sun, Shield } from "lucide-react"
+import Navbar from "@/components/ui/navbar"
 
 // Mock Admin AuthService
 const AdminAuthService = {
@@ -186,6 +187,7 @@ export default function AdminLoginPage() {
   }
 
   return (
+     <><Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     <div
       className={`min-h-screen  transition-all duration-500 ${darkMode
             ? "bg-gradient-to-r from-purple-800 via-blue-800 via-indigo-800 to-pink-800 animate-gradient-x"
@@ -231,6 +233,7 @@ export default function AdminLoginPage() {
         <AdminPanel darkMode={darkMode} />
       </div>
     </div>
+    </>
   )
 }
 
