@@ -41,21 +41,21 @@ export default function HomePage() {
         className={`${
           darkMode
             ? "bg-gradient-to-r from-purple-800 via-blue-800 via-indigo-800 to-pink-800 animate-gradient-x"
-            : "bg-gradient-to-r from-blue-600 via-purple-600 via-pink-600 to-orange-600 animate-gradient-x"
+            : "bg-gradient-to-r from-purple-600 via-blue-600 via-indigo-600 to-teal-600 animate-gradient-x"
         } shadow-2xl`}
         style={{
-          backgroundSize: "400% 400%",
+          backgroundSize: "200% 200%",
           animation: "gradient 8s ease infinite",
         }}
       >
-        <div className="max-w-6xl mx-auto px-6 py-4">
+        <div className="max-w-6xl mx-auto px-2 py-2">
           <div className="flex items-center justify-between">
-            <div className="text-center flex-1">
+            <div className=" flex-1">
               <h1
                 className="text-2xl md:text-3xl font-bold text-transparent bg-gradient-to-r from-white via-yellow-200 via-pink-200 to-cyan-200 bg-clip-text animate-gradient-x"
                 style={{ backgroundSize: "400% 400%", animation: "gradient 6s ease infinite" }}
               >
-                WelfareHub
+                &lt; WelfareHub /&gt;
               </h1>
               <p className="text-blue-100 font-semibold bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 bg-clip-text text-transparent">
                 Modern Welfare Management Platform
@@ -73,6 +73,7 @@ export default function HomePage() {
         </div>
       </div>
 
+      <hr />
       {/* Hero Banner */}
       <div
         className={`${
@@ -131,14 +132,14 @@ export default function HomePage() {
               darkMode
                 ? "bg-gradient-to-r from-purple-900/50 via-blue-900/50 to-pink-900/50"
                 : "bg-gradient-to-r from-purple-50/80 via-blue-50/80 to-pink-50/80"
-            } border-l-4 border-gradient-to-b from-purple-500 via-blue-500 to-pink-500 rounded-r-xl backdrop-blur-sm shadow-lg`}
+            } border-l-4 border-gradient-to-b from-purple-400 via-blue-400 to-pink-400 rounded-xl backdrop-blur-sm shadow-lg`}
             style={{
               borderImage: "linear-gradient(45deg, #8b5cf6, #3b82f6, #ec4899) 1",
               borderImageSlice: 1,
             }}
           >
             <p
-              className={`text-sm italic ${darkMode ? "text-purple-200" : "text-purple-700"} bg-gradient-to-r ${darkMode ? "from-purple-200 via-blue-200 to-pink-200" : "from-purple-700 via-blue-700 to-pink-700"} bg-clip-text text-transparent`}
+              className={`text-sm italic ${darkMode ? "text-purple-200" : "text-purple-200"} bg-gradient-to-r ${darkMode ? "from-purple-200 via-blue-200 to-pink-200" : "from-purple-800 via-blue-800 to-pink-800"} bg-clip-text`}
             >
               "A modern student project showcasing digital welfare management solutions"
             </p>

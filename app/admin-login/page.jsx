@@ -60,10 +60,14 @@ export default function AdminLoginPage() {
   if (!currentUser) {
     return (
       <div
-        className={`min-h-screen bg-gradient-to-br from-orange-50 via-white to-green-50 transition-all duration-500 ${darkMode ? "bg-gradient-to-br from-gray-900 via-pink-900 to-gray-900" : "bg-gradient-to-br from-pink-50 via-purple-50 to-orange-50"}`}
+        className={`min-h-screen transition-all duration-500 ${darkMode
+          ? "bg-gradient-to-br from-gray-900 via-purple-900 via-blue-900 to-indigo-900 animate-gradient-x"
+          : "bg-gradient-to-br from-blue-50 via-purple-50 via-pink-50 to-orange-50 animate-gradient-x"}`}
       >
         <div
-          className={`bg-gradient-to-r from-orange-500 via-white to-green-600 shadow-2xl border-b-4 border-orange-800 transition-all duration-500 ${darkMode ? "bg-gradient-to-r from-pink-800 via-purple-800 to-orange-800" : "bg-gradient-to-r from-pink-600 via-purple-600 to-orange-600"}`}
+          className={` transition-all duration-500 ${darkMode
+            ? "bg-gradient-to-r from-purple-800 via-blue-800 via-indigo-800 to-pink-800 animate-gradient-x"
+            : "bg-gradient-to-r from-purple-600 via-blue-600 via-indigo-600 to-teal-600 animate-gradient-x"}`}
         >
           <div className="max-w-6xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between">
@@ -183,10 +187,12 @@ export default function AdminLoginPage() {
 
   return (
     <div
-      className={`min-h-screen bg-gradient-to-br from-orange-50 via-white to-green-50 transition-all duration-500 ${darkMode ? "bg-gradient-to-br from-gray-900 via-pink-900 to-gray-900" : "bg-gradient-to-br from-pink-50 via-purple-50 to-orange-50"}`}
+      className={`min-h-screen  transition-all duration-500 ${darkMode
+            ? "bg-gradient-to-r from-purple-800 via-blue-800 via-indigo-800 to-pink-800 animate-gradient-x"
+            : "bg-gradient-to-r from-purple-600 via-blue-600 via-indigo-600 to-teal-600 animate-gradient-x"}`}
     >
       <div
-        className={`bg-gradient-to-r from-orange-500 via-white to-green-600 shadow-2xl transition-all duration-500 ${darkMode ? "bg-gradient-to-r from-pink-800 via-purple-800 to-orange-800" : "bg-gradient-to-r from-pink-600 via-purple-600 to-orange-600"}`}
+        className={`transition-all duration-500 ${darkMode ? "bg-gradient-to-r from-pink-800 via-purple-800 to-orange-800" : "bg-gradient-to-r from-pink-600 via-purple-600 to-orange-600"}`}
       >
         <div className="max-w-6xl mx-auto px-6 py-3">
           <div className="flex items-center justify-center">
